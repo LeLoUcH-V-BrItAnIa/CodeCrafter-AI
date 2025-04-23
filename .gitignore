@@ -1,0 +1,18 @@
+# Ignore Python cache and virtualenv
+__pycache__/
+*.pyc
+.env
+apienv/
+*.log
+
+# Ignore VS Code and other IDE settings
+.vscode/
+/apienv
+.idea/
+
+# Ignore Streamlit-generated stuff
+.streamlit/config.toml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
