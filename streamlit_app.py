@@ -86,7 +86,7 @@ default_code = {
 code_input = st.text_area("Enter your code below:", default_code[language], height=250)
 
 # --- EXPLANATION TOGGLE ---
-explain = st.checkbox("Explain the Output")
+explain = st.checkbox("Get Explanation")
 
 # --- COMPILE BUTTON ---
 if st.button("Run Code"):
@@ -104,7 +104,7 @@ if st.button("Run Code"):
                     }
                 )
                 if res.ok:
-                    st.success("✅ Gemini Response:")
+                    st.success("✅ Output:")
                     st.code(res.json()["response"], language=language)
                 else:
                     st.error("❌ Error: " + res.text)

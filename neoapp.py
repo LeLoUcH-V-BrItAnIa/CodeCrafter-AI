@@ -29,7 +29,7 @@ def run_code():
 
     # Initialize Gemini client
     client = genai.Client(
-        api_key="AIzaSyB4BlvNvIBd8yfiVwrTrB832zixrUQAKKU",  # Replace with os.environ.get(...) for security in real apps
+        api_key="YOUR_GOOGLE_API_KEY",  # Replace with os.environ.get(...) for security in real apps
     )
 
     contents = [
