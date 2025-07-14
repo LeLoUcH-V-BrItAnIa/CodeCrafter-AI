@@ -96,7 +96,7 @@ if st.button("Run Code"):
         with st.spinner("Compiling with Gemini..."):
             try:
                 res = requests.post(
-                    "http://localhost:5000/api/run",  # Update this URL as needed
+                    "https://code-backend-rsq4.onrender.com/api/run",  # Update this URL as needed
                     json={
                         "language": language,
                         "code": code_input,
